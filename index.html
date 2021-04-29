@@ -3,8 +3,15 @@
     <title>Ben Kinnebrew - Full-Stack Dev</title>
 <style>
     body{
-        background-color: lightgray;
+        background-color: rgb(63, 63, 63);
         font-family: sans-serif;
+    }
+
+    #main-div{
+        background-color: lightgray;
+        width:80%;
+        margin-left: 10%;
+        margin-right: 10%;
     }
 
     h1, h2, h4{
@@ -34,7 +41,8 @@
 
     p {
         word-break: break-word; 
-        width: 400px
+        width: 400px;
+        text-align: left;
     }   
 
     a{
@@ -42,16 +50,22 @@
         color:rgb(63, 63, 63)
     }
 
-    #wortwitch-image{
+    #wortwitch-image, #barrel-tracker-img{
         height: 400px;
         width: 400px;
     }
+    
+    .projects-section {
+        text-align: center;
+    }
+
     .project-div{
         background-color: rgb(63, 63, 63);
         padding: 5px;
         color: whitesmoke;
         width: fit-content;
         box-shadow: 4px 4px 8px #000000;
+        display: inline-block;
     }
 
     .project-tech{
@@ -83,6 +97,10 @@
         background-color: rgb(104, 167, 104);
     }
 
+    .link-box-group{
+        text-align: left;
+    }
+
     #email-form{
         text-align: center;
     }
@@ -93,64 +111,146 @@
         border-radius: 50%;
     }
 
-    #about-me-block{
+    #about-me-ps{
         display: inline-block;
+        margin-left: 5%;
+        text-align: center;
+    }
+    #about-me-img{
+        display: inline-block;
+    }
+
+    #about-me-block{
+        text-align: center;
+    }
+
+    #barrel-tracker-img{
+        height: 400px;
+        width: 400px;
     }
 
  
 </style>
 </head>
 <body>
+    <div id="main-div">
     <h1>Ben Kinnebrew</h1>
     <h4>Full-Stack Web Developer</h4>
-    <div>
-        <div id="about-me-block">
+    <div id="about-me-block">
+        <div id="about-me-img">
             <img id="me-img" src="images/me.jpg" alt="Ben Kinnebrew - Web Dev"> 
         </div>
-        <p id="about-me-block">Hi, I'm Ben. A full-stack devloper with an affinity for the back-end </p>
+        <div id="about-me-ps">
+            <p>Hi, I'm Ben. A full-stack developer with an affinity for the back-end, 
+                currently based on Jacksonville, FL. With a B.A. in Philosophy and experience as a professional 
+                brewer, I’ve been able tp apply my superb work-ethic and  problem-solving skills to teach 
+                myself programming concepts and modern frameworks. 
+            </p>
+            <p>
+                I have experience working with HTML, CSS, Vanilla JS, React.js, Python, Django,  C, and 
+                relational databases. I have a strong desire to learn, always looking to add new concepts, 
+                languages, and frameworks to my tool belt. 
+            </p>
+            <p>
+                I am diligent and internally motivated, having developed and worked through a curriculum 
+                to teach myself while working a full-time job. I am a creative problem-solver, I work 
+                extremely well with others, and I always follow through on my promises to fulfill responsibilities. 
+            </p>
+            <p>
+                Please feel free to contact me with any opportunities.  
+            </p>
+        </div>
     </div>
-
-    <div class="project-div">
-        <div>
-            <img id="wortwitch-image" src="images/wortwitch.png" alt="Wort Witch - Brewing Calculator"> 
+    <br>
+    <div class="projects-section">
+        <div class="project-div">
+            <div>
+                <img id="wortwitch-image" src="images/wortwitch.png" alt="Wort Witch - Brewing Calculator"> 
+            </div>
+            <h2 style="text-shadow: 2px 2px 4px #000000;">
+                Wort Witch - Brewing Calculator
+            </h2>
+            <div>
+                <div class="project-tech">
+                    React.js
+                </div>
+                <div class="project-tech">
+                    Javascript
+                </div>
+                <div class="project-tech">
+                    HTML
+                </div>
+                <div class="project-tech">
+                    CSS
+                </div>
+                <div class="project-tech">
+                    Bootstrap
+                </div>
+            </div>
+            <p>
+                Brewers often need to make last-minute calculations for
+                process changes and adjustments. Instead of breaking out 
+                a pen, paper, and calculator, this app serves to meet 
+                those math-related needs.
+            </p> 
+            <div class="link-box-group">
+                <div class="link-box-single">
+                    <a href="https://youthful-heisenberg-959795.netlify.app">Live Site</a>
+                </div>
+                <div class="link-box-single">
+                    <a href="https://github.com/bakinnebrew/brewing-calculator">Repo</a>
+                </div>
+            </div>
         </div>
-        <h2 style="text-shadow: 2px 2px 4px #000000;">
-            Wort Witch - Brewing Calculator
-        </h2>
-        <div>
-            <div class="project-tech">
-                React.js
+        <div style="margin-left: 5%" class="project-div">
+            <div>
+                <img id="barrel-tracker-img" src="images/barreltracker.png" alt="Barrel Tracker">
             </div>
-            <div class="project-tech">
-                Javascript
+            <h2 style="text-shadow: 2px 2px 4px #000000;">
+                Barrel Tracker
+            </h2>
+            <div>
+                <div class="project-tech">
+                    HTML
+                </div>
+                <div class="project-tech">
+                    CSS
+                </div>
+                <div class="project-tech">
+                    Javascript
+                </div>
+                <div class="project-tech">
+                    Python
+                </div>
+                <div class="project-tech">
+                    Django
+                </div>
+                <div class="project-tech">
+                    SQLite3
+                </div>
             </div>
-            <div class="project-tech">
-                HTML
-            </div>
-            <div class="project-tech">
-                CSS
-            </div>
-            <div class="project-tech">
-                Bootstrap
-            </div>
-        </div>
-        <p>
-            Brewers often need to make last-minute calculations for
-            process changes and adjustments. Instead of breaking out 
-            a pen, paper, and calculator, this app serves to meet 
-            those math-related needs.
-        </p> 
-        </p>
-        <div class="link-box-group">
-            <div class="link-box-single">
-                <a href="https://youthful-heisenberg-959795.netlify.app">Live Site</a>
-            </div>
-            <div class="link-box-single">
-                <a href="https://github.com/bakinnebrew/brewing-calculator">Repo</a>
+            <p>
+                Barrel Tracker is a web application designed to assist breweries 
+                in keeping track of their barrel inventory, making notes
+                while products are conditioning, and being notified when products 
+                need to be pulled and packaged.  
+            </p> 
+            <div class="link-box-group">
+                <div class="link-box-single">
+                    <a href="https://youthful-heisenberg-959795.netlify.app">Live Site</a>
+                </div>
+                <div class="link-box-single">
+                    <a href="https://github.com/bakinnebrew/barreltracker">Repo</a>
+                </div>
             </div>
         </div>
     </div>
     <br>
+
+
+
+
+
 
     <div id="email-form">
         <form action=”mailto:bakinnebrew@gmail.com.com method="POST" enctype=”multipart/form-data”>
@@ -168,6 +268,7 @@
             </div>
             <button class="link-box-single" type="submit">Send</button>
         </form>
+    </div>
     </div>
 
 </body>
