@@ -3,15 +3,172 @@
     <title>Ben Kinnebrew - Full-Stack Dev</title>
 <style>
     body{
-        background-color: dimgray;
-        font-family: 'Courier New', Courier, monospace;
-        color: firebrick;
+        background-color: lightgray;
+        font-family: sans-serif;
+    }
+
+    h1, h2, h4{
         text-align: center;
     }
+    input, select {
+        width: 40%;
+        padding: 5px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        text-align: auto;
+    }
+    textarea{
+        width: 40%;
+        padding: 5px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        text-align: auto;
+        font-family: sans-serif;
+    }
+
+    p {
+        word-break: break-word; 
+        width: 400px
+    }   
+
+    a{
+        text-decoration: none;
+        color:rgb(63, 63, 63)
+    }
+
+    #wortwitch-image{
+        height: 400px;
+        width: 400px;
+    }
+    .project-div{
+        background-color: rgb(63, 63, 63);
+        padding: 5px;
+        color: whitesmoke;
+        width: fit-content;
+        box-shadow: 4px 4px 8px #000000;
+    }
+
+    .project-tech{
+        height: fit-content;
+        width: fit-content;
+        padding: 3px;
+        border-radius: 5px;
+        color: whitesmoke;
+        display: inline-block;
+        border-style: solid;
+        border-width: 1px;
+        border-color: whitesmoke;
+    }
+
+    .link-box-single{
+        height: fit-content;
+        width: fit-content;
+        padding: 3px;
+        border-radius: 5px;
+        color:rgb(63, 63, 63);
+        background-color:lightgreen;
+        display: inline-block;
+        border-style: solid;
+        border-width: 2px;
+        border-color: black;
+    }
+
+    .link-box-single:hover{
+        background-color: rgb(104, 167, 104);
+    }
+
+    #email-form{
+        text-align: center;
+    }
+
+    #me-img{
+        height: 400px;
+        width: 300px;
+        border-radius: 50%;
+    }
+
+    #about-me-block{
+        display: inline-block;
+    }
+
+ 
 </style>
 </head>
 <body>
-    <h1> First Commit </h1>
-    
+    <h1>Ben Kinnebrew</h1>
+    <h4>Full-Stack Web Developer</h4>
+    <div>
+        <div id="about-me-block">
+            <img id="me-img" src="images/me.jpg" alt="Ben Kinnebrew - Web Dev"> 
+        </div>
+        <p id="about-me-block">Hi, I'm Ben. A full-stack devloper with an affinity for the back-end </p>
+    </div>
+
+    <div class="project-div">
+        <div>
+            <img id="wortwitch-image" src="images/wortwitch.png" alt="Wort Witch - Brewing Calculator"> 
+        </div>
+        <h2 style="text-shadow: 2px 2px 4px #000000;">
+            Wort Witch - Brewing Calculator
+        </h2>
+        <div>
+            <div class="project-tech">
+                React.js
+            </div>
+            <div class="project-tech">
+                Javascript
+            </div>
+            <div class="project-tech">
+                HTML
+            </div>
+            <div class="project-tech">
+                CSS
+            </div>
+            <div class="project-tech">
+                Bootstrap
+            </div>
+        </div>
+        <p>
+            Brewers often need to make last-minute calculations for
+            process changes and adjustments. Instead of breaking out 
+            a pen, paper, and calculator, this app serves to meet 
+            those math-related needs.
+        </p> 
+        </p>
+        <div class="link-box-group">
+            <div class="link-box-single">
+                <a href="https://youthful-heisenberg-959795.netlify.app">Live Site</a>
+            </div>
+            <div class="link-box-single">
+                <a href="https://github.com/bakinnebrew/brewing-calculator">Repo</a>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <div id="email-form">
+        <form action=”mailto:bakinnebrew@gmail.com.com method="POST" enctype=”multipart/form-data”>
+            <div>
+                <div>Your Name</div>
+                <input type="text"id="email-name" placeholder="Your Name"/>
+            </div>
+            <div>
+                <div>Your Email</div>
+                <input type="email" id="email-address" placeholder="Your Email"/>
+            </div>
+            <div>
+                <div>Message</div>
+                <textarea type="text" id="email-content" placeholder="Message" rows="6" maxlength="3000"></textarea>
+            </div>
+            <button class="link-box-single" type="submit">Send</button>
+        </form>
+    </div>
+
 </body>
 </html>
