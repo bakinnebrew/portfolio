@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <head>
     <title>Ben Kinnebrew - Full-Stack Dev</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 <style>
     body{
-        background-color: rgb(63, 63, 63);
         font-family: sans-serif;
+        background-image: url("images/home.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: auto;
     }
 
     #main-div{
         background-color: lightgray;
         width:80%;
+        margin-top: 5%;
+        margin-bottom: 5%;
         margin-left: 10%;
         margin-right: 10%;
         padding-bottom: 5%;
+        box-shadow: 4px 4px 8px #000000;
     }
 
     h1, h2, h4{
@@ -99,6 +107,19 @@
         color: rgb(63, 63, 63);
     }
 
+    #projects-header{
+        text-align: center;
+        font-family: sans-serif;
+        color:whitesmoke;
+    }
+
+    #projects-header-bar{
+        height: fit-content;
+        width: 100%;
+        padding: 1%;
+        background-color: rgb(63, 63, 63);
+    }
+
     .link-box-single:hover{
         background-color: rgb(104, 167, 104);
     }
@@ -171,11 +192,25 @@
         color: rgb(131, 131, 243);
     }
 
+    #project-nav{
+        width:100%;
+        display:inline-flex;
+        flex-wrap:nowrap;
+        justify-content:space-between;
+        align-items:center;
+        min-height:8vh;
+        background-color:hsl(0,0%,0%,50%);
+        -webkit-backdrop-filter:saturate(190%) blur(10px);
+        backdrop-filter:saturate(190%) blur(10px);
+        z-index:1000;
+    }
+
 </style>
 <script src="https://kit.fontawesome.com/9d16dd9d51.js" crossorigin="anonymous"></script>
 </head>
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
 <body>
+    <div id="background">
     <div id="main-div">
     <h1>Ben Kinnebrew</h1>
     <h4>Full-Stack Web Developer</h4>
@@ -204,6 +239,9 @@
                     Please feel free to contact me with any career opportunities.  
                 </p>
             </div>
+    </div>
+    <div id="projects-header-bar">
+        <h4 id="projects-header"> P R O J E C T S </h4>
     </div>
     <br>
     <div class="projects-section">
@@ -385,6 +423,8 @@
         </div>
             
     </div>
+    </div>
 
 </body>
 </html>
+
