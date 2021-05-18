@@ -18,27 +18,7 @@
     h1, h2, h4{
         text-align: center;
     }
-    input, select {
-        width: 40%;
-        padding: 5px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-        text-align: auto;
-    }
-    textarea{
-        width: 40%;
-        padding: 5px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-        text-align: auto;
-        font-family: sans-serif;
-    }
+
 
     p {
         word-break: break-word; 
@@ -127,21 +107,29 @@
     }
 
     #me-img{
-        height: 400px;
-        width: 300px;
+        width:100%;
+        max-width:275px;
         border-radius: 50%;
     }
 
     #about-me-ps{
-        display: inline-block;
-        margin-left: 5%;
-        text-align: center;
+        flex:1 1 350px;
+        text-align:left;
+    }
+
+    .ps{
+        width: 100%;
     }
     #about-me-img{
-        display: inline-block;
+        flex:1 1 200px;
+        align-content: center;
+        margin:1em;
     }
 
     #about-me-block{
+        margin:1em;
+        display:flex;
+        flex-wrap:wrap;
         text-align: center;
     }
 
@@ -180,8 +168,8 @@
 
 </style>
 <script src="https://kit.fontawesome.com/9d16dd9d51.js" crossorigin="anonymous"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
 <body>
     <div id="main-div">
     <h1>Ben Kinnebrew</h1>
@@ -190,26 +178,27 @@
         <div id="about-me-img">
             <img id="me-img" src="images/me.jpg" alt="Ben Kinnebrew - Web Dev"> 
         </div>
-        <div id="about-me-ps">
-            <p>Hi, I'm Ben. A full-stack developer with an affinity for the back-end, 
-                currently based in Jacksonville, FL. With a B.A. in Philosophy and experience as a professional 
-                brewer, I’ve been able to apply my superb work-ethic and problem-solving skills to teach 
-                myself programming concepts and modern frameworks. 
-            </p>
-            <p>
-                I have experience working with HTML, CSS, Vanilla JS, React.js, Python, Django, C, and 
-                relational databases. I have a strong desire to learn, always looking to add new concepts, 
-                languages, and frameworks to my tool belt. 
-            </p>
-            <p>
-                I am diligent and internally motivated, having developed and worked through a curriculum 
-                to teach myself while working a full-time job. I am a creative problem-solver, I work 
-                extremely well with others, and I always follow through on my promises to fulfill responsibilities. 
-            </p>
-            <p>
-                Please feel free to contact me with any opportunities.  
-            </p>
-        </div>
+            <div id="about-me-ps">
+                <br>
+                <p class="ps">Hi, I'm Ben. A full-stack developer with an affinity for the back-end, 
+                    currently based in Jacksonville, FL. With a B.A. in Philosophy and experience as a professional 
+                    brewer, I’ve been able to apply my superb work-ethic and  problem-solving skills to teach 
+                    myself programming concepts and modern frameworks. 
+                </p>
+                <p class="ps">
+                    I have experience working with HTML, CSS, Vanilla JS, React, Python, Django, C, and 
+                    relational databases. I have a strong desire to learn, always looking to add new concepts, 
+                    languages, and frameworks to my tool belt. 
+                </p>
+                <p class="ps">
+                    I am diligent and internally motivated, having developed and worked through a curriculum 
+                    to teach myself while working a full-time job. I am a creative problem-solver, I work 
+                    extremely well with others, and I always follow through on my promises to fulfill responsibilities. 
+                </p>
+                <p class="ps">
+                    Please feel free to contact me with any career opportunities.  
+                </p>
+            </div>
     </div>
     <br>
     <div class="projects-section">
@@ -365,10 +354,10 @@
             </p> 
             <div class="link-box-group">
                 <div class="link-box-single">
-                    <a href="https://github.com/bakinnebrew/DM-guide">Repo</a>
+                    <a href="https://compassionate-dubinsky-ad59d6.netlify.app/">Live Site</a>
                 </div>
                 <div class="link-box-single">
-                    <a href="https://compassionate-dubinsky-ad59d6.netlify.app/">Live Site</a>
+                    <a href="https://github.com/bakinnebrew/DM-guide">Repo</a>
                 </div>
             </div>
         </div>
