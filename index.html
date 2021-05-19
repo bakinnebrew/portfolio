@@ -5,7 +5,7 @@
 <style>
     body{
         font-family: sans-serif;
-        background-image: url('images/home.jpg');
+        background: url('images/home.jpg');
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: center;
@@ -112,19 +112,6 @@
         color: rgb(63, 63, 63);
     }
 
-    #projects-header{
-        text-align: center;
-        font-family: sans-serif;
-        color:whitesmoke;
-    }
-
-    #projects-header-bar{
-        height: fit-content;
-        width: 100%;
-        padding: 1%;
-        background-color: rgb(63, 63, 63);
-    }
-
     .link-box-single:hover{
         background-color: rgb(104, 167, 104);
     }
@@ -210,8 +197,53 @@
         z-index:1000;
     }
 
+    .projects-link{
+        display: inline-block;
+        color:whitesmoke;
+        margin-left: .5%;
+        margin-right: .5%;
+    }
+
+    #projects-header{
+        text-align: center;
+        font-family: sans-serif;
+        color:whitesmoke;
+    }
+
+    #projects-header-bar{
+        height: fit-content;
+        padding: 1%;
+        background-color: rgb(63, 63, 63);
+        text-align:center;
+        color: whitesmoke;
+    }
+
+    #projects-wrapper{
+        height: fit-content;
+    }
+
+    .projects-link:hover{
+        color:rgb(104, 167, 104);
+    }
+
 </style>
 <script src="https://kit.fontawesome.com/9d16dd9d51.js" crossorigin="anonymous"></script>
+<!-- <script>
+    document.addEventListener('DOMContentLoaded', function(){
+    window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("projects-header-bar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+    });
+</script> -->
 </head>
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
 <body>
@@ -245,12 +277,18 @@
                 </p>
             </div>
     </div>
-    <div id="projects-header-bar">
-        <h4 id="projects-header"> P R O J E C T S </h4>
+    <div id="projects-wrapper">
+        <div id="projects-header-bar">
+            <h4 id="projects-header"> P R O J E C T S </h4>
+            <a href="#wortwitch-section" class="projects-link"><h6>Wort Witch</h6></a>  |
+            <a href="#barrel-tracker-section" class="projects-link"><h6>Barrel Tracker</h6></a> |
+            <a href="#QRMM-section" class="projects-link"><h6>Quick Reference Monster Manual</h6></a> |
+            <a href="#task-manager-section" class="projects-link"><h6>Task Manager</h6></a> 
+        </div>
     </div>
     <br>
     <div class="projects-section">
-        <div class="project-div">
+        <div class="project-div" id="wortwitch-section">
             <div>
                 <img id="wortwitch-image" src="images/wortwitch.png" alt="Wort Witch - Brewing Calculator"> 
             </div>
@@ -289,7 +327,7 @@
                 </div>
             </div>
         </div>
-        <div class="project-div">
+        <div class="project-div" id="barrel-tracker-section">
             <div>
                 <img id="barrel-tracker-img" src="images/barreltracker.png" alt="Barrel Tracker">
             </div>
@@ -328,7 +366,7 @@
                 </div>
             </div>
         </div>
-        <div class="project-div">
+        <div class="project-div" id="QRMM-section">
             <div>
                     <img id="DM-image" src="images/DM_guide.png" alt="Monster Manual"/>
             </div>
@@ -367,7 +405,7 @@
                 </div>
             </div>
         </div>
-        <div class="project-div">
+        <div class="project-div" id="task-manager-section">
             <div>
                 <a>
                     <img id="task-manager-image" src="images/task_manager_p1.png" alt="Task Manager"/>
@@ -432,4 +470,5 @@
 
 </body>
 </html>
+
 
