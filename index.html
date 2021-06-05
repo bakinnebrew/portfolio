@@ -7,16 +7,14 @@
         font-family: sans-serif;
         background: url('images/home.jpg');
         background-repeat: no-repeat;
-        background-attachment: fixed; 
+        background-attachment: fixed;
         background-position: center;
         background-size: auto;
     }
 
-
     #main-div{
         background-color: lightgray;
         width:80%;
-        height: 90%;
         margin-top: 5%;
         margin-bottom: 5%;
         margin-left: 10%;
@@ -27,6 +25,7 @@
 
     h1, h2, h4{
         text-align: center;
+        font-size: 3vw;
     }
 
 
@@ -34,6 +33,7 @@
         word-break: break-word; 
         width: 100%;
         text-align: left;
+        font-size: 1.5vw;
     }   
 
     a{
@@ -107,8 +107,8 @@
         margin-left: 1%;
         margin-right: 1%;
     }
-    
-     .contact-icon:hover{
+
+    .contact-icon:hover{
         color:rgb(104, 167, 104)
     }
 
@@ -158,11 +158,16 @@
     }
 
     #barrel-tracker-img{
-        height: 100%;
         width: 100%;
+        height: auto;
     }
 
     #task-manager-image2{
+        width: 100%;
+        height: auto;
+    }
+
+    #books-api-image{
         height: 100%;
         width: 100%;
     }
@@ -289,7 +294,8 @@ function myFunction() {
             <a href="#wortwitch-section" class="projects-link"><h6>Wort Witch</h6></a>  |
             <a href="#barrel-tracker-section" class="projects-link"><h6>Barrel Tracker</h6></a> |
             <a href="#QRMM-section" class="projects-link"><h6>Quick Reference Monster Manual</h6></a> |
-            <a href="#task-manager-section" class="projects-link"><h6>Task Manager</h6></a> 
+            <a href="#task-manager-section" class="projects-link"><h6>Task Manager</h6></a> |
+            <a href="#books-api-section" class="projects-link"><h6>Library Book Checkout - REST API</h6></a> 
         </div>
     </div>
     <br>
@@ -411,6 +417,48 @@ function myFunction() {
                 </div>
             </div>
         </div>
+        <div class="project-div" id="books-api-section">
+            <div>
+                    <img id="books-api-image" src="images/books-api.png" alt="Books API"/>
+            </div>
+            <h2 style="text-shadow: 2px 2px 4px #000000;">
+                Library Book Checkout  REST API
+            </h2>
+            <div>
+                <div class="project-tech">
+                    HTML
+                </div>
+                <div class="project-tech">
+                    CSS
+                </div>
+                <div class="project-tech">
+                    Javascript
+                </div>
+                <div class="project-tech">
+                    Node.js
+                </div>
+                <div class="project-tech">
+                    Express
+                </div>
+                <div class="project-tech">
+                    REST API
+                </div>
+                <div class="project-tech">
+                    MySQL
+                </div>
+            </div>
+            <p>
+                This REST API is built with the theme of Library Book 
+                Checkout System. Various endpoints are in place to handle any 
+                CRUD operations enacted by the user. Data for books and users
+                are stored in a MySQL database.
+            </p> 
+            <div class="link-box-group">
+                <div class="link-box-single">
+                    <a href="https://github.com/bakinnebrew/books-api">Repo</a>
+                </div>
+            </div>
+        </div>
         <div class="project-div" id="task-manager-section">
             <div>
                 <a>
@@ -476,5 +524,4 @@ function myFunction() {
 
 </body>
 </html>
-
 
